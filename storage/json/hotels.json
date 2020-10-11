@@ -1,0 +1,132 @@
+{
+    "BestHotels": [
+        {
+            "from_date": "2020-10-11",
+            "to_date": "2020-10-31",
+            "hotelName": "Mariot",
+            "fare": 200,
+            "amenities": [
+                "Satellite",
+                "Wifi",
+                "TV"
+            ],
+            "city": "CAI",
+            "hotelRate": 5,
+            "discount": 20,
+            "adults_number": 2
+        },
+        {
+            "from_date": "2020-10-11",
+            "to_date": "2020-10-31",
+            "hotelName": "Hilton",
+            "fare": 400,
+            "amenities": [
+                "PlayStation",
+                "Satellite",
+                "Wifi",
+                "TV"
+            ],
+            "city": "CAI",
+            "hotelRate": 3,
+            "discount": 10,
+            "adults_number": 2
+        },
+        {
+            "from_date": "2020-10-11",
+            "to_date": "2020-10-31",
+            "hotelName": "Sheraton",
+            "fare": 500,
+            "amenities": [
+                "Satellite",
+                "Xbox",
+                "Wifi",
+                "TV"
+            ],
+            "city": "SPX",
+            "hotelRate": 4,
+            "discount": null,
+            "adults_number": 4
+        },
+        {
+            "from_date": "2020-10-11",
+            "to_date": "2020-10-31",
+            "hotelName": "Dusit Thani",
+            "fare": 500,
+            "amenities": [
+                "Satellite",
+                "Xbox",
+                "Wifi",
+                "TV"
+            ],
+            "city": "SPX",
+            "hotelRate": 2,
+            "discount": null,
+            "adults_number": 5
+        }
+    ],
+    "TopHotel": [
+        {
+            "from_date": "2020-10-11",
+            "to_date": "2020-10-31",
+            "hotelName": "Nabq Bay",
+            "fare": 200,
+            "amenities": [
+                "Satellite",
+                "Wifi",
+                "TV"
+            ],
+            "city": "SSH",
+            "hotelRate": 5,
+            "discount": 20,
+            "adults_number": 2
+        },
+        {
+            "from_date": "2020-10-11",
+            "to_date": "2020-10-31",
+            "hotelName": "El Hadaba",
+            "fare": 400,
+            "amenities": [
+                "PlayStation",
+                "Satellite",
+                "Wifi",
+                "TV"
+            ],
+            "city": "SSH",
+            "hotelRate": 3,
+            "discount": 10,
+            "adults_number": 3
+        },
+        {
+            "from_date": "2020-10-11",
+            "to_date": "2020-10-31",
+            "hotelName": "Samra Bay",
+            "fare": 500,
+            "amenities": [
+                "Satellite",
+                "Xbox",
+                "Wifi",
+                "TV"
+            ],
+            "city": "HRG",
+            "hotelRate": 4,
+            "discount": null,
+            "adults_number": 4
+        },
+        {
+            "from_date": "2020-10-11",
+            "to_date": "2020-10-31",
+            "hotelName": "Resort Tropitel Sahl Hasheesh",
+            "fare": 500,
+            "amenities": [
+                "Satellite",
+                "Xbox",
+                "Wifi",
+                "TV"
+            ],
+            "city": "HRG",
+            "hotelRate": 1,
+            "discount": null,
+            "adults_number": 5
+        }
+    ]
+}
