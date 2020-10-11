@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Resources\BestHotelResource;
 use App\Http\Resources\HotelResource;
+use App\Http\Resources\TopHotelResource;
 use App\Repositories\HotelRepository;
 use Illuminate\Http\Request;
 
@@ -37,9 +38,22 @@ class HotelController extends Controller
         if ($validation) {
             return $validation;
         }
-        $hotels = $this->hotelRepository->searchHotelsByProviders($request,'BestHotels');
+        $hotels = $this->hotelRepository->searchHotelsByProviders($request, 'BestHotels');
         if (count($hotels) > 0) {
             return $this->apiResponse(BestHotelResource::collection($hotels));
+        }
+        return $this->notFoundResponse('no hotels found');
+    }
+
+    public function topHotels(Request $request)
+    {
+        $validation = $this->hotelRepository->searchHotelsValidation($request);
+        if ($validation) {
+            return $validation;
+        }
+        $hotels = $this->hotelRepository->searchHotelsByProviders($request, 'TopHotel');
+        if (count($hotels) > 0) {
+            return $this->apiResponse(TopHotelResource::collection($hotels));
         }
         return $this->notFoundResponse('no hotels found');
     }

@@ -109,7 +109,7 @@
             ],
             "city": "HRG",
             "hotelRate": 4,
-            "discount": null,
+            "discount": 50,
             "adults_number": 4
         },
         {
@@ -126,7 +126,7 @@
             "city": "HRG",
             "hotelRate": 1,
             "discount": null,
-            "adults_number": 5
+            "adults_number": 4
         }
     ]
 }
