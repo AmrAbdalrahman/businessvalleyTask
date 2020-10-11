@@ -4,7 +4,7 @@
 function decodeProvidersJsonFile()
 {
     //Providers JSON File
-    $path = storage_path() . "\json\hotels.json";
+    $path = storage_path() . env('HOTELS_FILE_PATH');
 
     $jsonRequest = file_get_contents($path);
     //Decoding JSON

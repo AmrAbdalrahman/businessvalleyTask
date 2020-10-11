@@ -3,8 +3,10 @@ This task was build using [lumen](https://lumen.laravel.com/docs/5.8) 5.8 (larav
 
 - git clone of the master branch
 - run composer install
+- renaming .env.example to .env which contains json file path at key(HOTELS_FILE_PATH).
 - run composer dump-autoload
 - run php -S localhost:8000
+- you can find json file at storage directory
 
 # Endpoints
 
