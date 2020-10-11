@@ -36,6 +36,28 @@ class HotelRepository implements HotelRepositoryInterface
         return orderHotelsByRate($matchedResults);
     }
 
+    public function searchHotelsByProviders(Request $request, $searchingProviderName)
+    {
+        $providersData = decodeProvidersJsonFile();
+
+        $matchedResults = [];
+        //get dynamic provider name
+        $selectedProvider = $providersData->{$searchingProviderName};
+
+        //loop for hotels
+        foreach ($selectedProvider as $hotel) {
+
+            if ($this->booleanHotelValidation($request, $hotel)) {
+                $hotelData = $hotel;
+                $hotelData->providerName = $searchingProviderName;
+                array_push($matchedResults, $hotelData);
+            }
+
+        }
+
+        return orderHotelsByRate($matchedResults);
+    }
+
 
     #validation part
     public function searchHotelsValidation(Request $request)
