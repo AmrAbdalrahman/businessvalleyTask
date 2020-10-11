@@ -12,6 +12,11 @@ This task was build using [lumen](https://lumen.laravel.com/docs/5.8) 5.8 (larav
 - search for hotels at bestHotels provider (http://localhost:8000/api/hotel/bestHotels)
 - search for hotels at topHotels provider (http://localhost:8000/api/hotel/topHotels)
 
+# Testing
+
+- for windows run vendor\bin\phpunit
+- for mac run vendor/bin/phpunit
+
 
 # License
 
